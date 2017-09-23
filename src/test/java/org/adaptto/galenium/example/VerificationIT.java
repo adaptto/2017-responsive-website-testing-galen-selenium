@@ -46,6 +46,11 @@ public class VerificationIT extends AbstractExampleBase {
     super(testDevice);
   }
 
+  @Override
+  protected String getRelativePath() {
+    return Paths.PATH_TO_HOMEPAGE;
+  }
+
   @Test(groups = "dev", retryAnalyzer = RetryAnalyzer.class)
   public void verificationTest() {
     loadStartUrl();
@@ -65,10 +70,5 @@ public class VerificationIT extends AbstractExampleBase {
           new NoCssClassVerification(Selectors.SELECTOR_NAV_LINK_CONFERENCE, CSS_CLASS_NAVLINK_ACTIVE));
     }
     VerificationUtil.verify(new LinkTargetVerification(Selectors.SELECTOR_LOGO));
-  }
-
-  @Override
-  protected String getRelativePath() {
-    return Paths.PATH_TO_HOMEPAGE;
   }
 }
