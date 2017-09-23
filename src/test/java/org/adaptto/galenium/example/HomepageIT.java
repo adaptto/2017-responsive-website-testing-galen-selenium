@@ -38,11 +38,11 @@ import io.wcm.qa.galenium.verification.NoCssClassVerification;
 import io.wcm.qa.galenium.verification.PageTitleVerification;
 import io.wcm.qa.galenium.verification.VisibilityVerification;
 
-public class VerificationIT extends AbstractExampleBase {
+public class HomepageIT extends AbstractExampleBase {
 
   private static final String CSS_CLASS_NAVLINK_ACTIVE = "navlink-active";
   @Factory(dataProviderClass = TestDeviceProvider.class, dataProvider = "devices")
-  public VerificationIT(TestDevice testDevice) {
+  public HomepageIT(TestDevice testDevice) {
     super(testDevice);
   }
 
