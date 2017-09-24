@@ -66,8 +66,8 @@ public class ConferenceIT extends AbstractExampleBase {
     }
     else {
       verify(
-          new CssClassVerification(Selectors.SELECTOR_NAV_LINK_HOME, CSS_CLASS_NAVLINK_ACTIVE),
-          new NoCssClassVerification(Selectors.SELECTOR_NAV_LINK_CONFERENCE, CSS_CLASS_NAVLINK_ACTIVE));
+          new NoCssClassVerification(Selectors.SELECTOR_NAV_LINK_HOME, CSS_CLASS_NAVLINK_ACTIVE),
+          new CssClassVerification(Selectors.SELECTOR_NAV_LINK_CONFERENCE, CSS_CLASS_NAVLINK_ACTIVE));
     }
     VerificationUtil.verify(new LinkTargetVerification(Selectors.SELECTOR_LOGO));
   }
