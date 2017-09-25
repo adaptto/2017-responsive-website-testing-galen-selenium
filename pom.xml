@@ -58,6 +58,7 @@
     <galenium.specPath>${project.build.directory}/test-classes/galen/specs</galenium.specPath>
     <galenium.retryMax>0</galenium.retryMax>
     <galenium.report.rootPath>${project.build.directory}/galenium-reports</galenium.report.rootPath>
+    <galenium.report.sparse>false</galenium.report.sparse>
     <galenium.ignoreVerification>false</galenium.ignoreVerification>
     <galenium.suppressAutoAdjustBrowserSize>false</galenium.suppressAutoAdjustBrowserSize>
 
@@ -151,6 +152,7 @@
 
                 <!-- Galenium -->
                 <galenium.report.rootPath>${galenium.report.rootPath}</galenium.report.rootPath>
+                <galenium.report.sparse>${galenium.report.sparse}</galenium.report.sparse>
                 <galenium.specPath>${galenium.specPath}</galenium.specPath>
                 <galenium.screenshotOnSkipped>true</galenium.screenshotOnSkipped>
                 <galenium.retryMax>${galenium.retryMax}</galenium.retryMax>
