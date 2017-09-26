@@ -31,7 +31,7 @@
   <groupId>org.adaptto.galenium</groupId>
   <artifactId>org.adaptto.galenium.example</artifactId>
   <packaging>jar</packaging>
-  <version>0.1.7-SNAPSHOT</version>
+  <version>0.1.0-SNAPSHOT</version>
   <description>Example for adaptTo() 2017 - Responsive Website Testing with Galen and Selenium</description>
 
   <properties>
@@ -70,7 +70,7 @@
     <dependency>
       <groupId>io.wcm.qa</groupId>
       <artifactId>io.wcm.qa.galenium.galenium</artifactId>
-      <version>0.1.7-SNAPSHOT</version>
+      <version>0.1.8</version>
       <exclusions>
         <exclusion>
           <groupId>org.slf4j</groupId>
@@ -81,7 +81,7 @@
     <dependency>
       <groupId>io.wcm.qa</groupId>
       <artifactId>io.wcm.qa.galenium.logging</artifactId>
-      <version>0.1.7-SNAPSHOT</version>
+      <version>0.1.8</version>
     </dependency>
 
   </dependencies>
