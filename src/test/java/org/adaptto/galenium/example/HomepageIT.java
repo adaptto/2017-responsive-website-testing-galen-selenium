@@ -51,7 +51,7 @@ public class HomepageIT extends AbstractExampleBase {
     return Paths.PATH_TO_HOMEPAGE;
   }
 
-  @Test(groups = "dev", retryAnalyzer = RetryAnalyzer.class)
+  @Test(groups = "homepage", retryAnalyzer = RetryAnalyzer.class)
   public void verificationTest() {
     loadStartUrl();
     verify(

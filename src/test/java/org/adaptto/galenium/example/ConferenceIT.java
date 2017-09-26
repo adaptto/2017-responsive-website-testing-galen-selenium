@@ -51,7 +51,7 @@ public class ConferenceIT extends AbstractExampleBase {
     return Paths.PATH_TO_CONFERENCE_PAGE;
   }
 
-  @Test(groups = "dev", retryAnalyzer = RetryAnalyzer.class)
+  @Test(groups = "conference", retryAnalyzer = RetryAnalyzer.class)
   public void verificationTest() {
     loadStartUrl();
     verify(
