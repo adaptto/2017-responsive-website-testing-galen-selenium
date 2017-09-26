@@ -194,6 +194,7 @@
               <onlyGetDriversForHostOperatingSystem>true</onlyGetDriversForHostOperatingSystem>
               <customRepositoryMap>${basedir}/src/main/resources/RepositoryMap.xml</customRepositoryMap>
               <checkFileHashes>false</checkFileHashes>
+              <overwriteFilesThatExist>false</overwriteFilesThatExist>
             </configuration>
             <executions>
               <execution>
