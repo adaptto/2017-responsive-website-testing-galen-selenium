@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mvn install -Pverify
+mvn clean install -Pverify
