@@ -189,8 +189,8 @@
             <artifactId>driver-binary-downloader-maven-plugin</artifactId>
             <version>1.0.10</version>
             <configuration>
-              <rootStandaloneServerDirectory>${project.build.directory}/driverbinaries</rootStandaloneServerDirectory>
-              <downloadedZipFileDirectory>${project.build.directory}/driverdownloadzips</downloadedZipFileDirectory>
+              <rootStandaloneServerDirectory>./driverbinaries</rootStandaloneServerDirectory>
+              <downloadedZipFileDirectory>./driverdownloadzips</downloadedZipFileDirectory>
               <onlyGetDriversForHostOperatingSystem>true</onlyGetDriversForHostOperatingSystem>
               <customRepositoryMap>${basedir}/src/main/resources/RepositoryMap.xml</customRepositoryMap>
               <checkFileHashes>false</checkFileHashes>
