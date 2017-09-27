@@ -239,6 +239,35 @@
         </plugins>
       </build>
     </profile>
+    <profile>
+      <id>macosx</id>
+      <activation>
+	      <os>
+	       <family>mac</family>
+	      </os>
+      </activation>
+      <build>
+        <plugins>
+
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-failsafe-plugin</artifactId>
+            <configuration>
+              <systemPropertyVariables>
+
+                <!-- Selenium -->
+                <selenium.browser>chrome</selenium.browser>
+
+              </systemPropertyVariables>
+              <includes>
+                <include>**/*IT.java</include>
+              </includes>
+            </configuration>
+          </plugin>
+
+        </plugins>
+      </build>
+    </profile>
   </profiles>
 
 </project>
